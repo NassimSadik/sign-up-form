@@ -9,8 +9,86 @@
   box-sizing: border-box;
 }
 
+a {
+  color: inherit;
+}
+
 body {
-  width: 80%;
-  margin: auto;
-  text-align: center;
+  height: 100vh;
+  display: flex;
+}
+
+aside {
+  background-image: url(assets/background-photo.jpg);
+  background-size: cover;
+  flex: 1 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-family: norseBold;
+  font-size: 2rem;
+  margin-top: 200px;
+}
+
+.logo-container img {
+  width: 80px;
+}
+
+aside p {
+  font-weight: lighter;
+  margin-bottom: 18px;
+}
+
+main {
+  flex: 2 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(255, 250, 240);
+}
+
+section {
+  padding-left: 34px;
+}
+
+.introduction-section {
+  font-size: 1.4rem;
+  font-weight: 600;
+  max-width: 75ch;
+}
+
+.introduction-section p:last-child {
+  margin-top: 24px;
+}
+
+.form-section {
+  background-color: white;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.sign-section button {
+  background-color: #596D48;
+  color: white;
+  padding: 12px 55px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+.sign-section a {
+  text-decoration: none;
+  color: #596D48;
+  font-weight: bold;
 }
