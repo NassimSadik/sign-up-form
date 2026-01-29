@@ -72,23 +72,70 @@ section {
 }
 
 .form-section {
+  padding-top: 20px;
+  padding-bottom: 30px;
   background-color: white;
   margin-top: 60px;
   margin-bottom: 30px;
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+#sign-up-form {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  column-gap: 40px;
+  row-gap: 24px;
+}
+
+#sign-up-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+#sign-up-form label {
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  margin-bottom: 4px;
+}
+
+#sign-up-form input {
+  height: 34px;
+  padding: 6px 10px;
+  border: 1px solid #d0d0d0;
+  border-radius: 3px;
+}
+
+#sign-up-form input:focus {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+#sign-up-form input[type='password']:invalid {
+  border-color: red;
+}
+
+#sign-up-form input[type='password']:valid {
+  border-color: green;
 }
 
 .sign-section button {
-  background-color: #596D48;
+  background-color: #596d48;
   color: white;
   padding: 12px 55px;
   border: none;
   border-radius: 8px;
   margin-bottom: 24px;
-  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .sign-section a {
   text-decoration: none;
-  color: #596D48;
+  color: #596d48;
   font-weight: bold;
 }
